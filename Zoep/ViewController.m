@@ -95,5 +95,11 @@ int aantal;
     
     
 }
+- (IBAction)reset:(id)sender {
+    self.speler_1.text = @"";
+    self.speler_2.text = @"";
+    self.speler_3.text = @"";
+    self.speler_4.text = @"";
+}
 
 @end
