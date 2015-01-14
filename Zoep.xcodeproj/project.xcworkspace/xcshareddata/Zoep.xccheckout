@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>25B88180-553E-4046-9295-7B672044A106</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Zoep</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C1C4DAE2AED605BD6E26C4D8BCF13801683B7131</key>
+		<string>https://github.com/juleskreutzer/Zoep.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Zoep.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C1C4DAE2AED605BD6E26C4D8BCF13801683B7131</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/juleskreutzer/Zoep.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C1C4DAE2AED605BD6E26C4D8BCF13801683B7131</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C1C4DAE2AED605BD6E26C4D8BCF13801683B7131</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Zoep</string>
+		</dict>
+	</array>
+</dict>
+</plist>
