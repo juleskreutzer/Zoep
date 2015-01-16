@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F500673B1A6923B600FBF2FB /* game.m in Sources */ = {isa = PBXBuildFile; fileRef = F500673A1A6923B600FBF2FB /* game.m */; };
 		F57180D01A66DDEF003A2A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57180CF1A66DDEF003A2A66 /* main.m */; };
 		F57180D31A66DDEF003A2A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F57180D21A66DDEF003A2A66 /* AppDelegate.m */; };
 		F57180D61A66DDEF003A2A66 /* Zoep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57180D41A66DDEF003A2A66 /* Zoep.xcdatamodeld */; };
@@ -29,8 +28,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F50067391A6923B600FBF2FB /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
-		F500673A1A6923B600FBF2FB /* game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = game.m; sourceTree = "<group>"; };
 		F57180CA1A66DDEF003A2A66 /* Zoep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57180CE1A66DDEF003A2A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57180CF1A66DDEF003A2A66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -91,8 +88,6 @@
 				F57180D71A66DDEF003A2A66 /* ViewController.h */,
 				F57180D81A66DDEF003A2A66 /* ViewController.m */,
 				F57180DA1A66DDEF003A2A66 /* Main.storyboard */,
-				F50067391A6923B600FBF2FB /* game.h */,
-				F500673A1A6923B600FBF2FB /* game.m */,
 				F57180DD1A66DDEF003A2A66 /* Images.xcassets */,
 				F57180DF1A66DDEF003A2A66 /* LaunchScreen.xib */,
 				F57180D41A66DDEF003A2A66 /* Zoep.xcdatamodeld */,
@@ -176,6 +171,7 @@
 				TargetAttributes = {
 					F57180C91A66DDEF003A2A66 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = K3QECPQ6Y3;
 					};
 					F57180E51A66DDF0003A2A66 = {
 						CreatedOnToolsVersion = 6.1;
@@ -227,7 +223,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F500673B1A6923B600FBF2FB /* game.m in Sources */,
 				F57180D31A66DDEF003A2A66 /* AppDelegate.m in Sources */,
 				F57180D01A66DDEF003A2A66 /* main.m in Sources */,
 				F57180D91A66DDEF003A2A66 /* ViewController.m in Sources */,
@@ -290,6 +285,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -331,6 +327,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -353,9 +350,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Zoep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,9 +365,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Zoep/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
