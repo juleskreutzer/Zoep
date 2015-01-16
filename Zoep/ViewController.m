@@ -28,7 +28,23 @@ int aantal;
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-- (IBAction)play:(UIButton *)sender {
+- (IBAction)info:(id)sender {
+    // Nut van de app weergeven en wat extra info
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Heb je weer hulp nodig?!" message:@"Eigenlijk is de app een beetje nutteloos...\n\nGeef twee of meer namen op en er wordt willekeurig een naam gekozen.\n\n" delegate:nil cancelButtonTitle:@"VET!" otherButtonTitles:nil, nil];
+    
+    [message show];
+}
+- (IBAction)reset:(id)sender {
+    self.speler_1.text = @"";
+    self.speler_2.text = @"";
+    self.speler_3.text = @"";
+    self.speler_4.text = @"";
+    
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil message:@"Alle velden met namen zijn gewist." delegate:nil cancelButtonTitle:@"Super!" otherButtonTitles:nil, nil];
+    
+    [message show];
+}
+- (IBAction)play:(id)sender {
     NSString *speler1 = self.speler_1.text;
     NSString *speler2 = self.speler_2.text;
     NSString *speler3 = self.speler_3.text;
@@ -91,15 +107,6 @@ int aantal;
         UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Helaas!" message:[NSString stringWithFormat:@"Nu ben jij de sjaak, %@.", speler4] delegate:nil cancelButtonTitle:@"Jammer, maar oké" otherButtonTitles:nil, nil];
         [bericht show];
     }
-    
-    
-    
-}
-- (IBAction)reset:(id)sender {
-    self.speler_1.text = @"";
-    self.speler_2.text = @"";
-    self.speler_3.text = @"";
-    self.speler_4.text = @"";
 }
 
 @end

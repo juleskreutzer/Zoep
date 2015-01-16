@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F500673B1A6923B600FBF2FB /* game.m in Sources */ = {isa = PBXBuildFile; fileRef = F500673A1A6923B600FBF2FB /* game.m */; };
 		F57180D01A66DDEF003A2A66 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F57180CF1A66DDEF003A2A66 /* main.m */; };
 		F57180D31A66DDEF003A2A66 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F57180D21A66DDEF003A2A66 /* AppDelegate.m */; };
 		F57180D61A66DDEF003A2A66 /* Zoep.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F57180D41A66DDEF003A2A66 /* Zoep.xcdatamodeld */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F50067391A6923B600FBF2FB /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game.h; sourceTree = "<group>"; };
+		F500673A1A6923B600FBF2FB /* game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = game.m; sourceTree = "<group>"; };
 		F57180CA1A66DDEF003A2A66 /* Zoep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zoep.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57180CE1A66DDEF003A2A66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57180CF1A66DDEF003A2A66 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				F57180D71A66DDEF003A2A66 /* ViewController.h */,
 				F57180D81A66DDEF003A2A66 /* ViewController.m */,
 				F57180DA1A66DDEF003A2A66 /* Main.storyboard */,
+				F50067391A6923B600FBF2FB /* game.h */,
+				F500673A1A6923B600FBF2FB /* game.m */,
 				F57180DD1A66DDEF003A2A66 /* Images.xcassets */,
 				F57180DF1A66DDEF003A2A66 /* LaunchScreen.xib */,
 				F57180D41A66DDEF003A2A66 /* Zoep.xcdatamodeld */,
@@ -222,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F500673B1A6923B600FBF2FB /* game.m in Sources */,
 				F57180D31A66DDEF003A2A66 /* AppDelegate.m in Sources */,
 				F57180D01A66DDEF003A2A66 /* main.m in Sources */,
 				F57180D91A66DDEF003A2A66 /* ViewController.m in Sources */,
@@ -416,6 +422,7 @@
 				F57180F21A66DDF0003A2A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F57180F31A66DDF0003A2A66 /* Build configuration list for PBXNativeTarget "ZoepTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +431,7 @@
 				F57180F51A66DDF0003A2A66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
