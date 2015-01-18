@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam tweede speler" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-Lv-Bv4">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam tweede Zoep" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EeR-Lv-Bv4">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -26,7 +26,7 @@
                                     <action selector="textFieldFinishedWithKeyBoard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="EQc-cl-DPB"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam derde speler" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Do5-Dn-gBQ">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam derde Zoep" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Do5-Dn-gBQ">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -34,7 +34,7 @@
                                     <action selector="textFieldFinishedWithKeyBoard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="muD-dd-lz8"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam vierde speler" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-oA-gcC">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam vierde Zoep" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lNT-oA-gcC">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
@@ -44,54 +44,10 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B57-cb-dI1">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="79" id="cVJ-wa-YKK"/>
-                                </constraints>
-                                <state key="normal" title="Play!">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="cVJ-wa-YKK"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="cVJ-wa-YKK"/>
-                                    </mask>
-                                </variation>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Play!"/>
                                 <connections>
                                     <action selector="play:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="UzD-8l-Rgs"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam eerste speler" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65y-lT-CS8">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                <connections>
-                                    <action selector="textFieldFinishedWithKeyBoard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="Tqx-gt-Nco"/>
-                                </connections>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-Lb-1H2">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="JpO-SI-nVw"/>
-                                </constraints>
-                                <state key="normal" title="Reset namen">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JpO-SI-nVw"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact">
-                                    <mask key="constraints">
-                                        <include reference="JpO-SI-nVw"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ASm-64-aHq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPB-Jb-T82">
@@ -103,27 +59,46 @@
                                     <action selector="info:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hhh-bp-Vn0"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Naam eerste Zoep" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65y-lT-CS8">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="textFieldFinishedWithKeyBoard:" destination="vXZ-lx-hvc" eventType="editingDidEndOnExit" id="Tqx-gt-Nco"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3B-Lb-1H2">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Reset alle Zoepers">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="reset:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ASm-64-aHq"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HPB-Jb-T82" secondAttribute="bottom" constant="8" symbolic="YES" id="0X2-0W-QqQ"/>
-                            <constraint firstItem="HPB-Jb-T82" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="30x-ff-cZw"/>
-                            <constraint firstItem="lNT-oA-gcC" firstAttribute="leading" secondItem="Do5-Dn-gBQ" secondAttribute="leading" id="827-DT-R2l"/>
-                            <constraint firstItem="B57-cb-dI1" firstAttribute="centerX" secondItem="lNT-oA-gcC" secondAttribute="centerX" id="9Gx-e2-xvM"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="c3B-Lb-1H2" secondAttribute="bottom" constant="112" id="Bmr-E8-H5d"/>
-                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="leading" secondItem="65y-lT-CS8" secondAttribute="leading" id="CTx-XW-ZTY"/>
-                            <constraint firstItem="lNT-oA-gcC" firstAttribute="leading" secondItem="HPB-Jb-T82" secondAttribute="leading" id="Eca-pe-Ge7"/>
-                            <constraint firstItem="c3B-Lb-1H2" firstAttribute="centerX" secondItem="B57-cb-dI1" secondAttribute="centerX" id="KBF-oi-l5W"/>
-                            <constraint firstItem="lNT-oA-gcC" firstAttribute="trailing" secondItem="Do5-Dn-gBQ" secondAttribute="trailing" id="LVc-Tk-4hM"/>
-                            <constraint firstItem="Do5-Dn-gBQ" firstAttribute="top" secondItem="EeR-Lv-Bv4" secondAttribute="bottom" constant="25" id="RnP-F7-9y5"/>
-                            <constraint firstItem="lNT-oA-gcC" firstAttribute="top" secondItem="Do5-Dn-gBQ" secondAttribute="bottom" constant="25" id="T49-80-OEN"/>
-                            <constraint firstItem="Do5-Dn-gBQ" firstAttribute="trailing" secondItem="EeR-Lv-Bv4" secondAttribute="trailing" id="TxA-uD-1fM"/>
-                            <constraint firstItem="65y-lT-CS8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="XSh-mf-lBd"/>
-                            <constraint firstItem="65y-lT-CS8" firstAttribute="trailing" secondItem="EeR-Lv-Bv4" secondAttribute="trailing" id="cNQ-oP-FzW"/>
-                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="leading" secondItem="Do5-Dn-gBQ" secondAttribute="leading" id="d3e-NQ-vTm"/>
-                            <constraint firstItem="65y-lT-CS8" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="jhF-Lr-YqS"/>
-                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="top" secondItem="65y-lT-CS8" secondAttribute="bottom" constant="21" id="k0X-FW-S6H"/>
-                            <constraint firstItem="c3B-Lb-1H2" firstAttribute="top" secondItem="B57-cb-dI1" secondAttribute="bottom" constant="8" symbolic="YES" id="t2x-0L-v8f"/>
+                            <constraint firstItem="HPB-Jb-T82" firstAttribute="leading" secondItem="c3B-Lb-1H2" secondAttribute="leading" id="0fi-PF-5xh"/>
+                            <constraint firstItem="Do5-Dn-gBQ" firstAttribute="top" secondItem="EeR-Lv-Bv4" secondAttribute="bottom" constant="17" id="2rL-jb-5sK"/>
+                            <constraint firstItem="c3B-Lb-1H2" firstAttribute="top" secondItem="B57-cb-dI1" secondAttribute="bottom" constant="66" id="69N-BF-t2o"/>
+                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="trailing" secondItem="Do5-Dn-gBQ" secondAttribute="trailing" id="69d-m4-wuk"/>
+                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="leading" secondItem="65y-lT-CS8" secondAttribute="leading" id="BGd-px-Lus"/>
+                            <constraint firstItem="lNT-oA-gcC" firstAttribute="trailing" secondItem="Do5-Dn-gBQ" secondAttribute="trailing" id="EPj-bo-HzS"/>
+                            <constraint firstItem="lNT-oA-gcC" firstAttribute="top" secondItem="Do5-Dn-gBQ" secondAttribute="bottom" constant="17" id="KSd-Kg-zWO"/>
+                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="top" secondItem="65y-lT-CS8" secondAttribute="bottom" constant="18" id="QcT-Bb-iMJ"/>
+                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Qmo-MB-dLr"/>
+                            <constraint firstItem="HPB-Jb-T82" firstAttribute="top" secondItem="c3B-Lb-1H2" secondAttribute="bottom" constant="83" id="T2K-PH-1ZV"/>
+                            <constraint firstItem="65y-lT-CS8" firstAttribute="trailing" secondItem="EeR-Lv-Bv4" secondAttribute="trailing" id="WWS-E2-VQ1"/>
+                            <constraint firstItem="B57-cb-dI1" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="cmQ-jO-e5O"/>
+                            <constraint firstItem="EeR-Lv-Bv4" firstAttribute="leading" secondItem="Do5-Dn-gBQ" secondAttribute="leading" id="gNK-Wa-PD9"/>
+                            <constraint firstItem="lNT-oA-gcC" firstAttribute="trailing" secondItem="B57-cb-dI1" secondAttribute="trailing" id="gUq-IU-9g7"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="HPB-Jb-T82" secondAttribute="bottom" constant="8" symbolic="YES" id="oY2-Fe-OW8"/>
+                            <constraint firstItem="lNT-oA-gcC" firstAttribute="leading" secondItem="Do5-Dn-gBQ" secondAttribute="leading" id="qwd-37-2M3"/>
+                            <constraint firstItem="B57-cb-dI1" firstAttribute="leading" secondItem="c3B-Lb-1H2" secondAttribute="leading" id="sXB-ku-nMD"/>
+                            <constraint firstItem="65y-lT-CS8" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="23" id="tPM-su-uKW"/>
+                            <constraint firstItem="lNT-oA-gcC" firstAttribute="leading" secondItem="B57-cb-dI1" secondAttribute="leading" id="y03-pz-lg1"/>
+                            <constraint firstItem="c3B-Lb-1H2" firstAttribute="trailing" secondItem="B57-cb-dI1" secondAttribute="trailing" id="zCq-Gr-NrO"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
@@ -131,29 +106,31 @@
                                 <exclude reference="Do5-Dn-gBQ"/>
                                 <exclude reference="lNT-oA-gcC"/>
                                 <exclude reference="B57-cb-dI1"/>
+                                <exclude reference="HPB-Jb-T82"/>
                                 <exclude reference="65y-lT-CS8"/>
                                 <exclude reference="c3B-Lb-1H2"/>
-                                <exclude reference="HPB-Jb-T82"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="0X2-0W-QqQ"/>
-                                <exclude reference="Bmr-E8-H5d"/>
-                                <exclude reference="XSh-mf-lBd"/>
-                                <exclude reference="cNQ-oP-FzW"/>
-                                <exclude reference="jhF-Lr-YqS"/>
-                                <exclude reference="RnP-F7-9y5"/>
-                                <exclude reference="TxA-uD-1fM"/>
-                                <exclude reference="CTx-XW-ZTY"/>
-                                <exclude reference="d3e-NQ-vTm"/>
-                                <exclude reference="k0X-FW-S6H"/>
-                                <exclude reference="827-DT-R2l"/>
-                                <exclude reference="Eca-pe-Ge7"/>
-                                <exclude reference="LVc-Tk-4hM"/>
-                                <exclude reference="T49-80-OEN"/>
-                                <exclude reference="9Gx-e2-xvM"/>
-                                <exclude reference="30x-ff-cZw"/>
-                                <exclude reference="KBF-oi-l5W"/>
-                                <exclude reference="t2x-0L-v8f"/>
+                                <exclude reference="oY2-Fe-OW8"/>
+                                <exclude reference="WWS-E2-VQ1"/>
+                                <exclude reference="tPM-su-uKW"/>
+                                <exclude reference="2rL-jb-5sK"/>
+                                <exclude reference="69d-m4-wuk"/>
+                                <exclude reference="BGd-px-Lus"/>
+                                <exclude reference="QcT-Bb-iMJ"/>
+                                <exclude reference="Qmo-MB-dLr"/>
+                                <exclude reference="gNK-Wa-PD9"/>
+                                <exclude reference="EPj-bo-HzS"/>
+                                <exclude reference="KSd-Kg-zWO"/>
+                                <exclude reference="gUq-IU-9g7"/>
+                                <exclude reference="qwd-37-2M3"/>
+                                <exclude reference="y03-pz-lg1"/>
+                                <exclude reference="cmQ-jO-e5O"/>
+                                <exclude reference="sXB-ku-nMD"/>
+                                <exclude reference="0fi-PF-5xh"/>
+                                <exclude reference="T2K-PH-1ZV"/>
+                                <exclude reference="69N-BF-t2o"/>
+                                <exclude reference="zCq-Gr-NrO"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -162,29 +139,31 @@
                                 <include reference="Do5-Dn-gBQ"/>
                                 <include reference="lNT-oA-gcC"/>
                                 <include reference="B57-cb-dI1"/>
+                                <include reference="HPB-Jb-T82"/>
                                 <include reference="65y-lT-CS8"/>
                                 <include reference="c3B-Lb-1H2"/>
-                                <include reference="HPB-Jb-T82"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="0X2-0W-QqQ"/>
-                                <include reference="Bmr-E8-H5d"/>
-                                <include reference="XSh-mf-lBd"/>
-                                <include reference="cNQ-oP-FzW"/>
-                                <include reference="jhF-Lr-YqS"/>
-                                <include reference="RnP-F7-9y5"/>
-                                <include reference="TxA-uD-1fM"/>
-                                <include reference="CTx-XW-ZTY"/>
-                                <include reference="d3e-NQ-vTm"/>
-                                <include reference="k0X-FW-S6H"/>
-                                <include reference="827-DT-R2l"/>
-                                <include reference="Eca-pe-Ge7"/>
-                                <include reference="LVc-Tk-4hM"/>
-                                <include reference="T49-80-OEN"/>
-                                <include reference="9Gx-e2-xvM"/>
-                                <include reference="30x-ff-cZw"/>
-                                <include reference="KBF-oi-l5W"/>
-                                <include reference="t2x-0L-v8f"/>
+                                <include reference="oY2-Fe-OW8"/>
+                                <include reference="WWS-E2-VQ1"/>
+                                <include reference="tPM-su-uKW"/>
+                                <include reference="2rL-jb-5sK"/>
+                                <include reference="69d-m4-wuk"/>
+                                <include reference="BGd-px-Lus"/>
+                                <include reference="QcT-Bb-iMJ"/>
+                                <include reference="Qmo-MB-dLr"/>
+                                <include reference="gNK-Wa-PD9"/>
+                                <include reference="EPj-bo-HzS"/>
+                                <include reference="KSd-Kg-zWO"/>
+                                <include reference="gUq-IU-9g7"/>
+                                <include reference="qwd-37-2M3"/>
+                                <include reference="y03-pz-lg1"/>
+                                <include reference="cmQ-jO-e5O"/>
+                                <include reference="sXB-ku-nMD"/>
+                                <include reference="0fi-PF-5xh"/>
+                                <include reference="T2K-PH-1ZV"/>
+                                <include reference="69N-BF-t2o"/>
+                                <include reference="zCq-Gr-NrO"/>
                             </mask>
                         </variation>
                     </view>
@@ -198,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1.5" y="482"/>
+            <point key="canvasLocation" x="205.5" y="425"/>
         </scene>
     </scenes>
 </document>

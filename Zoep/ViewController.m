@@ -38,7 +38,7 @@ int aantal;
     self.speler_3.text = @"";
     self.speler_4.text = @"";
     
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil message:@"Alle velden met namen zijn gewist." delegate:nil cancelButtonTitle:@"Super!" otherButtonTitles:nil, nil];
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:nil message:@"Alle Zoepers zijn geweist!" delegate:nil cancelButtonTitle:@"Begrepen" otherButtonTitles:nil, nil];
     
     [message show];
 }
@@ -53,7 +53,7 @@ int aantal;
     if([speler1 isEqual: @""] && [speler2 isEqual: @""])
     {
         ++error;
-        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Naam vergeten" message:@"Je bent de naam van de eerste of tweede speler vergeten in te vullen!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Naam vergeten" message:@"Je bent de naam van de eerste op tweede Zoep vergeten!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         
         [message show];
     }
@@ -80,34 +80,34 @@ int aantal;
         willekeurig = rand()%aantal+1;
         
         if(willekeurig == 1){
-            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"En de winnaar is:" message:[ NSString stringWithFormat:@"Gefeliciteerd, %@, jij mag dringen gaan halen!",speler1] delegate:nil cancelButtonTitle:@"Leuk!" otherButtonTitles:nil, nil];
+            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Beste Zoepers" message:[ NSString stringWithFormat:@"We hebben een winnaar Zoepers! De winnaar is: %@. ",speler1] delegate:nil cancelButtonTitle:@"Leuk!" otherButtonTitles:nil, nil];
             
             [bericht show];
         }
         
         if(willekeurig == 2)
         {
-            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"YAY" message:[NSString stringWithFormat: @"%@, ik vind het ook niet leuk, maar nu is het jouw beurt.", speler2] delegate:nil cancelButtonTitle:@"Gesnopen" otherButtonTitles:nil, nil];
+            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"YAY" message:[NSString stringWithFormat: @"Proficiat Zoep %@, deze keer ben jij aan de beurt!", speler2] delegate:nil cancelButtonTitle:@"Gesnopen" otherButtonTitles:nil, nil];
             [bericht show];
         }
         
         if(willekeurig == 3)
         {
-            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Prijs!" message:[NSString stringWithFormat:@"Nu mag jij, %@", speler3] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Prijs!" message:[NSString stringWithFormat:@"En de zoep winnaar is: %@", speler3] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
             
             [bericht show];
         }
         
         if(willekeurig == 4)
         {
-            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Helaas!" message:[NSString stringWithFormat:@"Nu ben jij de sjaak, %@.", speler4] delegate:nil cancelButtonTitle:@"Jammer, maar oké" otherButtonTitles:nil, nil];
+            UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Helaas Zoep!" message:[NSString stringWithFormat:@"Nu ben jij de sjaak, %@.", speler4] delegate:nil cancelButtonTitle:@"Jammer, maar oké" otherButtonTitles:nil, nil];
             [bericht show];
         }
     }
 }
 - (IBAction)info:(id)sender {
     // Nut van de app weergeven en wat extra info
-    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Heb je weer hulp nodig?!" message:@"Eigenlijk is de app een beetje nutteloos...\n\nGeef twee of meer namen op en er wordt willekeurig een naam gekozen.\n\nWil je liever contact met me opnemen? Dat kan via juleskreutzer@me.com" delegate:nil cancelButtonTitle:@"VET!" otherButtonTitles:nil, nil];
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Bedankt voor het gebruiken van Zoep!" message:@"Hulp nodig? het is heel simpel. \nGeef 2 of meer namen op en druk op play. Er wordt willekeurig een naam van een Zoep gekozen. \n\nIk wil graag weten hoe jij over mijn app denkt. Stuur me dus eens een mail: juleskreutzer@me.com" delegate:nil cancelButtonTitle:@"Sluiten" otherButtonTitles:nil, nil];
     
     [message show];
 
