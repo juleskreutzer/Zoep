@@ -9,7 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    BOOL _bannerIsVisible;
+    ADBannerView *_adBanner;
+}
 @end
 
 @implementation ViewController
@@ -19,11 +22,19 @@ int willekeurig;
 // int aantal wordt gevuld door het aantal namen dat is ingevuld.
 int aantal;
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+    _adBanner = [[ADBannerView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height, 320, 50)];
+    _adBanner.delegate = self;
+}
 - (IBAction) textFieldFinishedWithKeyBoard:(id)sender {
      [sender resignFirstResponder];
 }
