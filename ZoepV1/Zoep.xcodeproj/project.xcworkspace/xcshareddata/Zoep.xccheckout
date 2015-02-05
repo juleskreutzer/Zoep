@@ -14,11 +14,11 @@
 		<string>https://github.com/juleskreutzer/Zoep.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Zoep.xcodeproj</string>
+	<string>ZoepV1/Zoep.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C1C4DAE2AED605BD6E26C4D8BCF13801683B7131</key>
-		<string>../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/juleskreutzer/Zoep.git</string>

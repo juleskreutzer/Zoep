@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="L87-w8-apD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C68m" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xVj-0E-S60">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
@@ -15,6 +15,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" restorationIdentifier="reset" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="0yY-cS-jU6">
+                            <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Reset namen">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="RemoveNames:" destination="2wE-6C-USm" eventType="touchUpInside" id="3hU-DZ-Cfo"/>
+                            </connections>
+                        </button>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" textLabel="6YS-8d-jt7" style="IBUITableViewCellStyleDefault" id="uVw-cR-Qkn">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -40,8 +50,12 @@
                             <outlet property="delegate" destination="2wE-6C-USm" id="jtG-o5-1M3"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="tQ1-x5-KWl"/>
                     <navigationItem key="navigationItem" title="Zoepers" id="FOy-gF-t5D">
+                        <barButtonItem key="leftBarButtonItem" title="Play" id="Rze-Tu-Fwc">
+                            <connections>
+                                <action selector="play:" destination="2wE-6C-USm" id="kA0-XC-Ifv"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tk6-4g-KXP">
                             <connections>
                                 <segue destination="g2l-q7-KdJ" kind="popoverPresentation" popoverAnchorBarButtonItem="Tk6-4g-KXP" id="qgV-JH-Sw8">
@@ -53,7 +67,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kou-ZD-ypl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1456.5" y="305"/>
+            <point key="canvasLocation" x="547.5" y="313"/>
         </scene>
         <!--Nieuwe Zoep-->
         <scene sceneID="ufC-wZ-h7g">
@@ -67,10 +81,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wat is de naam van de Zoeper?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JzS-Yh-Qjq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="textfield" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Wat is de naam van de Zoeper?" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="JzS-Yh-Qjq">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" spellCheckingType="no" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YhW-Ju-HaW" id="2EV-xh-1CO"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -114,13 +131,130 @@
                     </navigationItem>
                     <connections>
                         <outlet property="DoneButton" destination="8yV-p9-uQm" id="MbV-Jl-jlf"/>
-                        <outlet property="textField" destination="JzS-Yh-Qjq" id="3DB-q9-rh6"/>
+                        <outlet property="textField" destination="JzS-Yh-Qjq" id="fHf-QK-nbf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <exit id="KPU-Wk-0bT" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3109.5" y="305"/>
+            <point key="canvasLocation" x="2191.5" y="305"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bFl-3O-0e3">
+            <objects>
+                <viewController id="xVj-0E-S60" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SnC-2v-Agm"/>
+                        <viewControllerLayoutGuide type="bottom" id="uLe-Aq-iUP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wu-cW-QAd">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zet je geluid aan voor maximale belevenis ;)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxI-ON-cVb">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="4L9-5f-LEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="4L9-5f-LEe"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="4L9-5f-LEe"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Druk op de play-knop om het spel te starten" translatesAutoresizingMaskIntoConstraints="NO" id="a61-Q4-xAM">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="oCV-QZ-Ho2"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="0.40000000000000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oCV-QZ-Ho2"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="oCV-QZ-Ho2"/>
+                                    </mask>
+                                </variation>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ufm-Fn-May">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="PLAY">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="L87-w8-apD" kind="show" id="5v8-eW-H41"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="a61-Q4-xAM" firstAttribute="top" secondItem="SnC-2v-Agm" secondAttribute="bottom" constant="8" symbolic="YES" id="3Sf-NM-2pD"/>
+                            <constraint firstItem="ufm-Fn-May" firstAttribute="trailing" secondItem="hxI-ON-cVb" secondAttribute="trailing" id="ANu-3K-aSU"/>
+                            <constraint firstItem="ufm-Fn-May" firstAttribute="leading" secondItem="a61-Q4-xAM" secondAttribute="leading" id="cke-vd-ADl"/>
+                            <constraint firstItem="a61-Q4-xAM" firstAttribute="leading" secondItem="3wu-cW-QAd" secondAttribute="leadingMargin" id="gPU-bl-1ue"/>
+                            <constraint firstItem="a61-Q4-xAM" firstAttribute="trailing" secondItem="ufm-Fn-May" secondAttribute="trailing" id="u5T-7I-I9T"/>
+                            <constraint firstItem="hxI-ON-cVb" firstAttribute="trailing" secondItem="3wu-cW-QAd" secondAttribute="trailingMargin" id="xc0-xy-ukY"/>
+                            <constraint firstItem="ufm-Fn-May" firstAttribute="top" secondItem="3wu-cW-QAd" secondAttribute="top" constant="285" id="yBq-pW-swJ">
+                                <variation key="heightClass=regular-widthClass=compact" constant="373"/>
+                            </constraint>
+                            <constraint firstAttribute="bottom" secondItem="hxI-ON-cVb" secondAttribute="bottom" constant="20" symbolic="YES" id="yjo-FJ-fiW"/>
+                            <constraint firstItem="hxI-ON-cVb" firstAttribute="leading" secondItem="ufm-Fn-May" secondAttribute="leading" id="ytl-Cu-gpH"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="hxI-ON-cVb"/>
+                                <exclude reference="a61-Q4-xAM"/>
+                                <exclude reference="ufm-Fn-May"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3Sf-NM-2pD"/>
+                                <exclude reference="gPU-bl-1ue"/>
+                                <exclude reference="u5T-7I-I9T"/>
+                                <exclude reference="ANu-3K-aSU"/>
+                                <exclude reference="cke-vd-ADl"/>
+                                <exclude reference="yBq-pW-swJ"/>
+                                <exclude reference="xc0-xy-ukY"/>
+                                <exclude reference="yjo-FJ-fiW"/>
+                                <exclude reference="ytl-Cu-gpH"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="hxI-ON-cVb"/>
+                                <include reference="a61-Q4-xAM"/>
+                                <include reference="ufm-Fn-May"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3Sf-NM-2pD"/>
+                                <include reference="gPU-bl-1ue"/>
+                                <include reference="u5T-7I-I9T"/>
+                                <include reference="ANu-3K-aSU"/>
+                                <include reference="cke-vd-ADl"/>
+                                <include reference="yBq-pW-swJ"/>
+                                <include reference="xc0-xy-ukY"/>
+                                <include reference="yjo-FJ-fiW"/>
+                                <include reference="ytl-Cu-gpH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zYK-o9-1Pf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1200" y="289"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="g7V-qo-PNo">
@@ -133,7 +267,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Twn-2Y-owd" kind="relationship" relationship="rootViewController" id="HQt-bq-dfG"/>
+                        <segue destination="2wE-6C-USm" kind="relationship" relationship="rootViewController" id="HQt-bq-dfG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RES-wo-dzD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -156,26 +290,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pGs-Eh-t3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2215.5" y="305"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="5di-VB-Yu5">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Twn-2Y-owd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="jv4-UV-DfX"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="4th-3V-IUD">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="2wE-6C-USm" kind="relationship" relationship="viewControllers" id="yeI-YD-IbT"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jpw-R7-oRL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="538.5" y="305"/>
+            <point key="canvasLocation" x="1297.5" y="305"/>
         </scene>
     </scenes>
 </document>

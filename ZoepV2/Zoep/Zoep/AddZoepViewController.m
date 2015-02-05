@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    _textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -26,15 +28,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;    
+}
+
 
 #pragma mark - Navigation
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if (sender != self.DoneButton) return;
+    
     if (self.textField.text.length > 0) {
         self.zoep = [[Zoep alloc] init];
         self.zoep.playername = self.textField.text;
-        self.zoep.checked = NO;
+        self.zoep.checked = nil;
+    }
+    else
+    {
+        UIAlertView *bericht = [[UIAlertView alloc] initWithTitle:@"Zoepnaam te kort" message:@"Geef een naam op voor de Zoep slimmerik!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        
+        [bericht show];
     }
 }
+
+
 @end
