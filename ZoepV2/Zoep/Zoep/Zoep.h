@@ -13,4 +13,5 @@
 @property (strong, nonatomic) NSString *playername;
 @property BOOL *checked;
 
+
 @end

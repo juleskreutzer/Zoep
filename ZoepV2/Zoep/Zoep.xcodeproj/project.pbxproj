@@ -20,6 +20,14 @@
 		F51D961B1A81179600BD4966 /* AddZoepViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F51D96191A81179600BD4966 /* AddZoepViewController.xib */; };
 		F51D961E1A8118A100BD4966 /* ZoepTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51D961D1A8118A100BD4966 /* ZoepTableViewController.m */; };
 		F51D96211A811A8800BD4966 /* Zoep.m in Sources */ = {isa = PBXBuildFile; fileRef = F51D96201A811A8800BD4966 /* Zoep.m */; };
+		F52674271AC60372003BE383 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52674261AC60372003BE383 /* Storyboard.storyboard */; };
+		F52674321AC6072C003BE383 /* InterfaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = F52674311AC6072C003BE383 /* InterfaceController.m */; };
+		F52674341AC6072C003BE383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52674331AC6072C003BE383 /* Images.xcassets */; };
+		F52674381AC6072C003BE383 /* Zoep WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F52674371AC6072C003BE383 /* Zoep WatchKit App.app */; };
+		F52674401AC6072C003BE383 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F526743E1AC6072C003BE383 /* Interface.storyboard */; };
+		F52674421AC6072C003BE383 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F52674411AC6072C003BE383 /* Images.xcassets */; };
+		F52674451AC6072C003BE383 /* Zoep WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F526742C1AC6072C003BE383 /* Zoep WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F526744E1AC60926003BE383 /* WatchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F526744D1AC60926003BE383 /* WatchKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +38,35 @@
 			remoteGlobalIDString = F51D95E41A8110EB00BD4966;
 			remoteInfo = Zoep;
 		};
+		F52674391AC6072C003BE383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51D95DD1A8110EB00BD4966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F52674361AC6072C003BE383;
+			remoteInfo = "Zoep WatchKit App";
+		};
+		F52674431AC6072C003BE383 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F51D95DD1A8110EB00BD4966 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F526742B1AC6072C003BE383;
+			remoteInfo = "Zoep WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F526744C1AC6072C003BE383 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F52674451AC6072C003BE383 /* Zoep WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F512350B1A8258FC001470E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -54,6 +90,17 @@
 		F51D961D1A8118A100BD4966 /* ZoepTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZoepTableViewController.m; sourceTree = "<group>"; };
 		F51D961F1A811A8800BD4966 /* Zoep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Zoep.h; sourceTree = "<group>"; };
 		F51D96201A811A8800BD4966 /* Zoep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Zoep.m; sourceTree = "<group>"; };
+		F52674261AC60372003BE383 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F526742C1AC6072C003BE383 /* Zoep WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Zoep WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F526742F1AC6072C003BE383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52674301AC6072C003BE383 /* InterfaceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterfaceController.h; sourceTree = "<group>"; };
+		F52674311AC6072C003BE383 /* InterfaceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterfaceController.m; sourceTree = "<group>"; };
+		F52674331AC6072C003BE383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F52674371AC6072C003BE383 /* Zoep WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoep WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F526743D1AC6072C003BE383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F526743F1AC6072C003BE383 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F52674411AC6072C003BE383 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F526744D1AC60926003BE383 /* WatchKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchKit.framework; path = System/Library/Frameworks/WatchKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,18 +119,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F52674291AC6072C003BE383 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F526744E1AC60926003BE383 /* WatchKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F51D95DC1A8110EB00BD4966 = {
 			isa = PBXGroup;
 			children = (
+				F526744D1AC60926003BE383 /* WatchKit.framework */,
 				F512350B1A8258FC001470E9 /* AVFoundation.framework */,
 				F51D96171A81179600BD4966 /* AddZoepViewController.h */,
 				F51D96181A81179600BD4966 /* AddZoepViewController.m */,
 				F51D96191A81179600BD4966 /* AddZoepViewController.xib */,
 				F51D95E71A8110EB00BD4966 /* Zoep */,
 				F51D96041A8110EB00BD4966 /* ZoepTests */,
+				F526742D1AC6072C003BE383 /* Zoep WatchKit Extension */,
+				F526743B1AC6072C003BE383 /* Zoep WatchKit App */,
 				F51D95E61A8110EB00BD4966 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -93,6 +151,8 @@
 			children = (
 				F51D95E51A8110EB00BD4966 /* Zoep.app */,
 				F51D96011A8110EB00BD4966 /* ZoepTests.xctest */,
+				F526742C1AC6072C003BE383 /* Zoep WatchKit Extension.appex */,
+				F52674371AC6072C003BE383 /* Zoep WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,6 +168,7 @@
 				F51D96201A811A8800BD4966 /* Zoep.m */,
 				F51D961C1A8118A100BD4966 /* ZoepTableViewController.h */,
 				F51D961D1A8118A100BD4966 /* ZoepTableViewController.m */,
+				F52674261AC60372003BE383 /* Storyboard.storyboard */,
 				F51235111A826C39001470E9 /* Media.xcassets */,
 				F51235131A826D00001470E9 /* icon.xcassets */,
 				F51D95EF1A8110EB00BD4966 /* Zoep.xcdatamodeld */,
@@ -142,6 +203,43 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F526742D1AC6072C003BE383 /* Zoep WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F52674301AC6072C003BE383 /* InterfaceController.h */,
+				F52674311AC6072C003BE383 /* InterfaceController.m */,
+				F52674331AC6072C003BE383 /* Images.xcassets */,
+				F526742E1AC6072C003BE383 /* Supporting Files */,
+			);
+			path = "Zoep WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F526742E1AC6072C003BE383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F526742F1AC6072C003BE383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F526743B1AC6072C003BE383 /* Zoep WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F526743E1AC6072C003BE383 /* Interface.storyboard */,
+				F52674411AC6072C003BE383 /* Images.xcassets */,
+				F526743C1AC6072C003BE383 /* Supporting Files */,
+			);
+			path = "Zoep WatchKit App";
+			sourceTree = "<group>";
+		};
+		F526743C1AC6072C003BE383 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F526743D1AC6072C003BE383 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +250,12 @@
 				F51D95E11A8110EB00BD4966 /* Sources */,
 				F51D95E21A8110EB00BD4966 /* Frameworks */,
 				F51D95E31A8110EB00BD4966 /* Resources */,
+				F526744C1AC6072C003BE383 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F52674441AC6072C003BE383 /* PBXTargetDependency */,
 			);
 			name = Zoep;
 			productName = Zoep;
@@ -180,6 +280,39 @@
 			productReference = F51D96011A8110EB00BD4966 /* ZoepTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F526742B1AC6072C003BE383 /* Zoep WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F526744B1AC6072C003BE383 /* Build configuration list for PBXNativeTarget "Zoep WatchKit Extension" */;
+			buildPhases = (
+				F52674281AC6072C003BE383 /* Sources */,
+				F52674291AC6072C003BE383 /* Frameworks */,
+				F526742A1AC6072C003BE383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F526743A1AC6072C003BE383 /* PBXTargetDependency */,
+			);
+			name = "Zoep WatchKit Extension";
+			productName = "Zoep WatchKit Extension";
+			productReference = F526742C1AC6072C003BE383 /* Zoep WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F52674361AC6072C003BE383 /* Zoep WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F526744A1AC6072C003BE383 /* Build configuration list for PBXNativeTarget "Zoep WatchKit App" */;
+			buildPhases = (
+				F52674351AC6072C003BE383 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zoep WatchKit App";
+			productName = "Zoep WatchKit App";
+			productReference = F52674371AC6072C003BE383 /* Zoep WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,6 +329,13 @@
 					F51D96001A8110EB00BD4966 = {
 						CreatedOnToolsVersion = 6.1.1;
 						TestTargetID = F51D95E41A8110EB00BD4966;
+					};
+					F526742B1AC6072C003BE383 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = K3QECPQ6Y3;
+					};
+					F52674361AC6072C003BE383 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -214,6 +354,8 @@
 			targets = (
 				F51D95E41A8110EB00BD4966 /* Zoep */,
 				F51D96001A8110EB00BD4966 /* ZoepTests */,
+				F526742B1AC6072C003BE383 /* Zoep WatchKit Extension */,
+				F52674361AC6072C003BE383 /* Zoep WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -228,6 +370,7 @@
 				F51D95F71A8110EB00BD4966 /* Main.storyboard in Resources */,
 				F51235141A826D00001470E9 /* icon.xcassets in Resources */,
 				F51235121A826C39001470E9 /* Media.xcassets in Resources */,
+				F52674271AC60372003BE383 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +378,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F526742A1AC6072C003BE383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52674381AC6072C003BE383 /* Zoep WatchKit App.app in Resources */,
+				F52674341AC6072C003BE383 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F52674351AC6072C003BE383 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52674401AC6072C003BE383 /* Interface.storyboard in Resources */,
+				F52674421AC6072C003BE383 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +423,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F52674281AC6072C003BE383 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F52674321AC6072C003BE383 /* InterfaceController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -269,6 +438,16 @@
 			isa = PBXTargetDependency;
 			target = F51D95E41A8110EB00BD4966 /* Zoep */;
 			targetProxy = F51D96021A8110EB00BD4966 /* PBXContainerItemProxy */;
+		};
+		F526743A1AC6072C003BE383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F52674361AC6072C003BE383 /* Zoep WatchKit App */;
+			targetProxy = F52674391AC6072C003BE383 /* PBXContainerItemProxy */;
+		};
+		F52674441AC6072C003BE383 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F526742B1AC6072C003BE383 /* Zoep WatchKit Extension */;
+			targetProxy = F52674431AC6072C003BE383 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -279,6 +458,14 @@
 				F51D95F61A8110EB00BD4966 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F526743E1AC6072C003BE383 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F526743F1AC6072C003BE383 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -424,6 +611,70 @@
 			};
 			name = Release;
 		};
+		F52674461AC6072C003BE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Zoep WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F52674471AC6072C003BE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				INFOPLIST_FILE = "Zoep WatchKit Extension/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F52674481AC6072C003BE383 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = Zoep_WatchKit_Extension;
+				INFOPLIST_FILE = "Zoep WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F52674491AC6072C003BE383 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COPY_PHASE_STRIP = NO;
+				IBSC_MODULE = Zoep_WatchKit_Extension;
+				INFOPLIST_FILE = "Zoep WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -453,6 +704,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F526744A1AC6072C003BE383 /* Build configuration list for PBXNativeTarget "Zoep WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52674481AC6072C003BE383 /* Debug */,
+				F52674491AC6072C003BE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F526744B1AC6072C003BE383 /* Build configuration list for PBXNativeTarget "Zoep WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F52674461AC6072C003BE383 /* Debug */,
+				F52674471AC6072C003BE383 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 

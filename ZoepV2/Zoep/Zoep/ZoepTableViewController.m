@@ -160,7 +160,7 @@ AVAudioPlayer *audioPlayer;
         // Er zijn namen opgegeven, dus spel starten
         
         //Willekeurig getal kiezen
-        willekeurig = rand()%aantal;
+        willekeurig = arc4random()%aantal;
     
         Zoep *player = (Zoep *)[self.zoepers objectAtIndex:willekeurig];
     

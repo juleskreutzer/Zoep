@@ -9,8 +9,11 @@
 #import "AddZoepViewController.h"
 
 @interface AddZoepViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *DoneButton;
+
+@property (nonatomic, retain) NSMutableArray *zoepers;
 
 @end
 
@@ -43,6 +46,7 @@
         self.zoep = [[Zoep alloc] init];
         self.zoep.playername = self.textField.text;
         self.zoep.checked = nil;
+        [self.zoepers addObject:self.textField.text];
     }
     else
     {
