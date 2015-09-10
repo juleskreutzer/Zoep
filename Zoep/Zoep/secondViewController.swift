@@ -10,4 +10,5 @@ import UIKit
 
 class secondViewController : ViewController {
 
+    @IBOutlet weak var toPass: UITextField!
 }

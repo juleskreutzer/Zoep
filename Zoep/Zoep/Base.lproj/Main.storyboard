@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ir0-gA-7yD">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Home-->
@@ -66,50 +65,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="m5h-US-kyg">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="EnterName" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gbw-G3-GXK">
+                                <rect key="frame" x="16" y="136" width="568" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="m5h-US-kyg" firstAttribute="top" secondItem="2aN-vA-S9d" secondAttribute="bottom" constant="136" id="SFS-1Q-Xyz"/>
-                            <constraint firstItem="m5h-US-kyg" firstAttribute="trailing" secondItem="QBn-8g-XAv" secondAttribute="trailingMargin" id="ahU-ox-DoR"/>
-                            <constraint firstItem="m5h-US-kyg" firstAttribute="leading" secondItem="QBn-8g-XAv" secondAttribute="leadingMargin" id="bIh-Mv-yhk"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="m5h-US-kyg"/>
-                            </mask>
-                            <mask key="constraints">
-                                <exclude reference="SFS-1Q-Xyz"/>
-                                <exclude reference="ahU-ox-DoR"/>
-                                <exclude reference="bIh-Mv-yhk"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular-widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="m5h-US-kyg"/>
-                            </mask>
-                            <mask key="constraints">
-                                <include reference="SFS-1Q-Xyz"/>
-                                <include reference="ahU-ox-DoR"/>
-                                <include reference="bIh-Mv-yhk"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="sRV-Bu-OiM">
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="eeu-7F-YQr">
                             <connections>
-                                <segue destination="vXZ-lx-hvc" kind="show" id="EF0-li-Rex"/>
+                                <segue destination="vXZ-lx-hvc" kind="show" identifier="newName" id="EF0-li-Rex"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="toPass" destination="Gbw-G3-GXK" id="ust-QH-NyK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TZ5-xJ-bib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2922" y="312.75"/>
+            <point key="canvasLocation" x="2922" y="312"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bi6-g6-TI0">
